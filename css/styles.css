@@ -1,0 +1,788 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/* font-family: 'EB Garamond', serif; */
+/* font-family: 'Inter', sans-serif; */
+
+
+.bc {
+  background: #BCE7E4;
+  background: -moz-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+  background: -webkit-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+  background: linear-gradient(to bottom, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+}
+
+.color {
+  background-color: #738F98;
+}
+
+/* header */
+
+/* .colorNav {
+  color: black;
+  font-family: 'EB Garamond', serif;
+} */
+
+
+/* subrayado de links */
+
+.colorNav a {
+  position: relative;
+  font-size: 1.3em;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+  font-family: 'EB Garamond', serif;
+}
+
+.colorNav a::after {
+  content: "";
+  width: 0px;
+  height: 4px;
+  background-color: #738F98;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all .5s;
+  will-change: width;
+}
+
+.colorNav a:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+
+
+.header__container-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.header__container-item a {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 15px;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.5em;
+  color: black;
+
+}
+
+
+
+/* .header__container-item a:hover {
+  text-shadow: 1px 1px #738F98;
+} */
+
+
+
+
+
+
+
+
+
+/* main */
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  align-items: center;
+  height: 90vh;
+
+}
+
+.hero__container h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+
+}
+
+.hero__container button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent
+}
+
+/* falta animacion del boton */
+/* .hero__container button:hover {
+  text-shadow: ;
+} */
+
+.hero__container a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+
+}
+
+.bc-img-index {
+  background-image: url(../assets/img/c20-m.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.carousel-item img {
+  width: 80%;
+}
+
+.carousel {
+  transform: scale(100%);
+}
+
+
+
+.hero__container-items {
+  margin: 2rem;
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+/* main seguros-automoviles */
+
+.main__automoviles {
+  text-align: center;
+}
+
+.main__automoviles h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 30px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+
+.main__automoviles {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__automoviles h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.section__automoviles {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 70vh;
+  position: relative;
+}
+
+
+
+.card_automoviles1 {
+  background-image: url(../assets/img/chevy-s.jpg);
+}
+
+.card_automoviles2 {
+  background-image: url(../assets/img/chevyss-s.jpg);
+
+}
+
+.card_automoviles3 {
+  background-image: url(../assets/img/chevyc10-s.jpg);
+}
+
+.card {
+  width: 30%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  border-radius: 8%;
+  text-align: center;
+  position: relative;
+  border: 2px solid black;
+  margin-bottom: 50px;
+  transition: all .5s;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(5px);
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(0, 0, 0, .33);
+  border-radius: 8%;
+
+}
+
+.card_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.card h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* form automoviles*/
+
+.section__form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  margin-top: 30px;
+}
+
+.card__form {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid black;
+  font-family: 'Inter', sans-serif;
+
+}
+
+
+.card__form-automoviles {
+  background-image: url(../assets/img/auto-varado-s.jpg);
+}
+
+.card__form-item {
+  position: relative;
+  width: 70%;
+  border-bottom: 2px solid black;
+
+}
+
+.card__form-item label,
+.text_area label {
+  position: absolute;
+  transition: all .5s;
+  transform: translateY(-20%);
+  top: 50%;
+  left: 5px;
+  font-weight: bold;
+
+}
+
+.card__form-item input {
+  border: none;
+  padding-top: 5px;
+  padding: 35px 0 0 5px;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+
+}
+
+.card__form-item input:focus~label,
+.text_area textarea:focus~label,
+.card__form-item input:valid~label,
+.text_area textarea:valid~label {
+  top: -2px;
+}
+
+
+.text_area textarea:focus~label,
+.text_area textarea:valid~label {
+  top: -20px;
+}
+
+.card__form-check {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.card__form-check label {
+  background-color: hsl(0, 0%, 100%, .70);
+  display: flex;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.card__form-check input {
+  appearance: none;
+  position: absolute;
+
+
+}
+
+.card__form-check input[type=radio]:checked+label {
+  border: 2px solid black;
+}
+
+.card__form-button button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: hsl(0, 0%, 100%, .70);
+
+}
+
+.card__form-button {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+/* main hogar */
+
+.main__hogar {
+  text-align: center;
+}
+
+
+.card__hogar1 {
+  background-image: url(../assets/img/seguros-vida.jpg);
+  margin: 20px;
+}
+
+.card__hogar2 {
+  background-image: url(../assets/img/seguro-familia-s.jpg);
+  width: 90%;
+  min-height: 90%;
+}
+
+.main__hogar h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 30px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: transparent;
+  margin-bottom: 50px
+}
+
+.main__hogar h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.section__hogar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  min-height: 70vh;
+  position: relative;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  min-height: 70vh;
+}
+
+.card__info p {
+  font-family: 'Inter', sans-serif;
+}
+
+.p {
+  margin: 10px;
+}
+
+
+/* form hogar  */
+
+.card__form-hogar {
+  background-image: url(../assets/img/seguros-vida-formulario.jpg);
+}
+
+.card__form-check-hogar {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.check-hogar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
+/* main nosotros */
+
+.mainNosotros {
+  width: 100vh;
+}
+
+.main__nosotros {
+  text-align: center;
+}
+
+
+.img__nosotros {
+  margin-top: 30px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.info__nosotros {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+}
+
+.info__nosotros p {
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.fullscreen {
+  width: 100%;
+}
+
+
+
+
+/* main contacto */
+
+.main__contacto {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__contacto h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 30px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+
+.main__contacto h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.form__contacto {
+  width: 90vw;
+  min-height: 60vh;
+  background-color: grey;
+  flex-direction: row;
+  display: flex;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: -50px;
+}
+
+.form__box {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.form_box2 label {
+  margin: 20px;
+
+}
+
+.form__box2 textarea {
+  resize: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-right: 30px;
+}
+
+.text_area {
+  width: 80%;
+  height: 20%;
+  border-bottom: 2px solid black;
+  position: relative;
+  background-color: transp;
+
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.info__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.info__form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40vw;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  height: 70%;
+}
+
+.info__form-rs i {
+  padding: 0 10px;
+
+}
+
+.fab {
+  width: 30px;
+  color: black;
+}
+
+.mapa {
+  margin-bottom: 30px;
+}
+
+
+
+/* footer */
+
+
+footer {
+  background-color: #738F98;
+  border-top: 1px solid black;
+
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+.footer__container {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 95vw;
+  margin-top: 10px;
+
+}
+
+.footer p {
+
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8em;
+  margin: 10px;
+}
+
+.footer__container img {
+  width: 18%;
+}
+
+
+
+
+@media screen and (min-width:0px) and (max-width:412px) {
+  .section__automoviles {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .card {
+    width: 90vw;
+
+
+  }
+
+  .card__info {
+    margin-top: 50px;
+  }
+
+  .section__hogar {
+    flex-direction: column;
+  }
+
+  .section__form {
+    margin-top: 100px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .card__hogar2 {
+    height: 90vh;
+  }
+
+  .card__form-hogar {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+@media screen and (min-width:413px) and (max-width:768px) {
+  .section__automoviles {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .card {
+    width: 90vw;
+
+
+  }
+
+  .card__info {
+    margin-top: 50px;
+  }
+
+  .section__hogar {
+    flex-direction: column;
+  }
+
+  .section__form {
+    margin-top: 100px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .card__hogar2 {
+    height: 90vh;
+  }
+
+  .card__form-hogar {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024x) {}
