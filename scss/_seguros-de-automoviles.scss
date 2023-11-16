@@ -1,0 +1,223 @@
+.main__automoviles {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background: -moz-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+  background: -webkit-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+  background: linear-gradient(to bottom, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: transparent;
+    margin-bottom: 50px;
+    font-family: 'EB Garamond', serif;
+    font-size: 3em;
+    font-weight: bold;
+  }
+
+  .section__automoviles {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 70vh;
+    position: relative;
+
+    .card_automoviles1 {
+      background-image: url(../assets/img/chevy-s.jpg);
+    }
+
+    .card_automoviles2 {
+      background-image: url(../assets/img/chevyss-s.jpg);
+    }
+
+    .card_automoviles3 {
+      background-image: url(../assets/img/chevyc10-s.jpg);
+    }
+
+    .card {
+      width: 30%;
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      padding-top: 50px;
+      padding-bottom: 100px;
+      color: white;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      border-radius: 8%;
+      text-align: center;
+      position: relative;
+      border: 2px solid black;
+      margin-bottom: 50px;
+      transition: all .5s;
+      margin-bottom: 10px;
+
+      &:hover {
+        transform: translateY(5px);
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        inset: 0;
+        background-color: rgba(0, 0, 0, .33);
+        border-radius: 8%;
+      }
+    }
+
+    article .bc {
+      background: #BCE7E4;
+      background: -moz-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+      background: -webkit-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+      background: linear-gradient(to bottom, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+    }
+
+    .card_items {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 10px;
+
+      h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .section__form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    margin-top: 30px;
+
+    .card__form {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 90%;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      border-radius: 20px;
+      border: 1px solid black;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .card__form-automoviles {
+      background-image: url(../assets/img/auto-varado-s.jpg);
+    }
+
+    .card__form-item {
+      position: relative;
+      width: 70%;
+      border-bottom: 2px solid black;
+    }
+
+    form .card__form-item label,
+    .text_area label {
+      position: absolute;
+      transition: all .5s;
+      transform: translateY(-20%);
+      top: 50%;
+      left: 5px;
+      font-weight: bold;
+    }
+
+    form .card__form-item input {
+      border: none;
+      padding-top: 5px;
+      padding: 35px 0 0 5px;
+      width: 100%;
+      background-color: transparent;
+      outline: none;
+    }
+
+    form .card__form-item input:focus~label,
+    .text_area textarea:focus~label,
+    .card__form-item input:valid~label,
+    .text_area textarea:valid~label {
+      top: -2px;
+    }
+
+    form .text_area textarea:focus~label,
+    .text_area textarea:valid~label {
+      top: -20px;
+    }
+
+    form .card__form-check {
+      font-weight: bold;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+    }
+
+    form .card__form-check label {
+      background-color: rgba(255, 255, 255, 0.7);
+      display: flex;
+      padding: 10px;
+      border-radius: 15px;
+      border: 2px solid white;
+    }
+
+    form .card__form-check input {
+      appearance: none;
+      position: absolute;
+    }
+
+    form .card__form-check input[type=radio]:checked+label {
+      border: 2px solid black;
+    }
+
+    form .card__form-button button {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      padding: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.7)
+    }
+
+    form .card__form-button {
+      display: flex;
+      width: 70%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
