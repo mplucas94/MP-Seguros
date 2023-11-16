@@ -1,24 +1,15 @@
 .main__contacto {
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flex (center, center, column);
 
-  background: #BCE7E4;
-  background: -moz-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
-  background: -webkit-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
-  background: linear-gradient(to bottom, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+  @include bc;
 
   .center {
-    display: flex;
-    justify-content: center;
+    @include flex (center, start, row)
   }
 
   h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center, row);
     padding: 10px;
     padding-bottom: 30px;
     border-radius: 30px;
@@ -43,10 +34,7 @@
 
 
     .form__box2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
+      @include flex(space-around, center, column);
       min-height: 60vh;
 
       .card__form-item {
@@ -100,10 +88,7 @@
 
       .card__form-check {
         font-weight: bold;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(space-around, center, row);
         width: 70%;
       }
 
@@ -127,10 +112,8 @@
       }
 
       .card__form-button button {
-        display: flex;
+        @include flex (center, center, row);
         width: 100%;
-        justify-content: center;
-        align-items: center;
         border-radius: 15px;
         padding: 10px;
         font-family: 'Inter', sans-serif;
@@ -140,10 +123,8 @@
       }
 
       .card__form-button {
-        display: flex;
         width: 70%;
-        justify-content: center;
-        align-items: center;
+        @include flex (center, center, row);
       }
 
       .text_area {
@@ -155,16 +136,12 @@
       }
 
       .botones {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        @include flex (center, center, row);
       }
 
       .info__form-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flex (space-evenly, center, column);
         width: 40vw;
         font-family: 'Inter', sans-serif;
         font-size: 1rem;
