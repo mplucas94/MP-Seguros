@@ -1,10 +1,95 @@
-header nav .bc {
+header nav {
   background: #BCE7E4;
   background: -moz-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
   background: -webkit-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
-  background: linear-gradient(to bottom, #BCE7E4 0%, #83CBC7 74%, #738F98 100%); }
+  background: linear-gradient(to bottom, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+}
+
+header nav .colorNav a {
+  position: relative;
+  font-size: 1.3em;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+  font-family: 'EB Garamond', serif;
+}
+
+header nav .colorNav a::after {
+  content: "";
+  width: 0px;
+  height: 4px;
+  background-color: #738F98;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all .5s;
+  will-change: width;
+}
+
+header nav .colorNav a:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+footer {
+  background-color: #738F98;
+  border-top: 1px solid black;
+}
+
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+footer .footer p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8em;
+  margin: 10px;
+}
+
+footer .footer .footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 95vw;
+  margin-top: 10px;
+}
+
+footer .footer .footer__container p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8em;
+  margin: 10px;
+}
+
+footer .footer .footer__container img {
+  width: 18%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #BCE7E4;
+  background: -moz-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+  background: -webkit-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+  background: linear-gradient(to bottom, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+}
+
+main .carrousel {
+  transform: scale(100%);
+}
+
+main .carrousel img {
+  width: 80%;
+}
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}

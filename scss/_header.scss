@@ -1,10 +1,37 @@
 header {
     nav {
-        .bc {
-            background: #BCE7E4;
-            background: -moz-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
-            background: -webkit-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
-            background: linear-gradient(to bottom, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+        background: #BCE7E4;
+        background: -moz-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+        background: -webkit-linear-gradient(top, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+        background: linear-gradient(to bottom, #BCE7E4 0%, #83CBC7 74%, #738F98 100%);
+
+        .colorNav {
+            a {
+                position: relative;
+                font-size: 1.3em;
+                color: black;
+                text-decoration: none;
+                font-weight: 500;
+                margin-left: 40px;
+                font-family: 'EB Garamond', serif;
+
+                &::after {
+                    content: "";
+                    width: 0px;
+                    height: 4px;
+                    background-color: #738F98;
+                    position: absolute;
+                    bottom: 0;
+                    right: 50%;
+                    transition: all .5s;
+                    will-change: width;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    right: 0;
+                }
+            }
         }
     }
 }
